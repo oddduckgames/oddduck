@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
   
           <div class="navbar-brand">
             <a href="../oddduckgames.github.io/index.html" class="navbar-item is-family-secondary is-size-4 is-hidden-desktop">
-              <img src="../oddduckgames.github.io/img/duck.png" hieght="30">
+              <img src="../oddduckgames.github.io/img/duck.png">
               <strong>oddduck games</strong></a>
-            <a href="../oddduckgames.github.io/index.html" class="navbar-item is-family-secondary is-size-3 is-hidden-mobile is-hidden-tablet-only">
-            <img src="../oddduckgames.github.io/img/duck.png" hieght="30">
-            <strong>oddduck games</strong></a>
+            <a href="../oddduckgames.github.io/index.html" class="navbar-item is-family-secondary is-size-2 is-hidden-mobile is-hidden-tablet-only">
+              <img src="../oddduckgames.github.io/img/duck.png">
+              <strong>oddduck games</strong></a>
             <div class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu-options">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
