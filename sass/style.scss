@@ -4,5 +4,13 @@
 
 $family-secondary: 'Cute Font', cursive;
 
+.dark-switch
+{
+    padding-left: 3rem;
+    color: orange;
+}
 
 @import "../../oddduckgames.github.io/bulma/bulma.sass";
+@import "../../oddduckgames.github.io/bulma/sass/extensions/index.sass";
+
+
