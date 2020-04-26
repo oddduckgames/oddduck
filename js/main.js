@@ -34,21 +34,21 @@ document.addEventListener('DOMContentLoaded', () => {
               <a href="../oddduckgames.github.io/pages/contact.html" class="navbar-item">contact</a>
             </div>
             <div class="navbar-end">
-              <a href="https://www.youtube.com/channel/UCqzFJQ7_h8XI3jNtAsrEq9w/" class="navbar-item"><i class="fab fa-youtube"></i>
+              <a href="https://www.youtube.com/channel/UCqzFJQ7_h8XI3jNtAsrEq9w/" class="navbar-item"><span style="color: #c4302b;"><i class="fab fa-youtube"></i></span>
                 <span class="is-hidden-desktop">
                   <strong>The official YouTube channel</strong>
                   <br>
                   <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tutorials, gameplay and more</em>
                 </span>
               </a>
-              <a href="https://twitter.com/oddduckgames" class="navbar-item"><i class="fab fa-twitter"></i>
+              <a href="https://twitter.com/oddduckgames" class="navbar-item"><span style="color: #00acee;"><i class="fab fa-twitter"></i></span>
                 <span class="is-hidden-desktop">
                   <strong>The official Twitter</strong>
                   <br>
                   <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stay updated or @ us</em>
                 </span>
               </a>
-              <a href="https://www.twitch.tv/oddduckgames" class="navbar-item"><i class="fab fa-twitch"></i>
+              <a href="https://www.twitch.tv/oddduckgames" class="navbar-item"><span style="color: #6441a5 ;"><i class="fab fa-twitch"></i></span>
                 <span class="is-hidden-desktop">
                   <strong>The official Twitch stream</strong>
                   <br>
