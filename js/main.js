@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const testing = false;
     const parser = new DOMParser();
     let path = ""
-    const iter = location.pathname.split("io")[1].split("/").length - 1
+    let iter = location.pathname.split("/").length - 1
+    if(testing) iter = location.pathname.split("io")[1].split("/").length - 1
+     
     for(let x = 0; x < iter; x++) path += "../"
     console.log(path)
     const main_nav = parser.parseFromString(
