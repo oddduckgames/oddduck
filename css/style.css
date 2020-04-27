@@ -5,6 +5,10 @@
   color: orange;
 }
 
+.hide {
+  display: none;
+}
+
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {

@@ -10,6 +10,11 @@ $family-secondary: 'Cute Font', cursive;
     color: orange;
 }
 
+.hide
+{
+    display: none;
+}
+
 @import "../../oddduckgames.github.io/bulma/bulma.sass";
 @import "../../oddduckgames.github.io/bulma/sass/extensions/index.sass";
 

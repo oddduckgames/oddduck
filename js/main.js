@@ -14,7 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="navbar-item">
             <div class="field dark-switch is-hidden-desktop">
               <input id="dark-mode-switch" type="checkbox" name="dark-mode-switch" class="switch dark-mode-switch is-rtl is-small" checked="checked">
-              <label for="dark-mode-switch"><i class="fas fa-lightbulb"></i></label>
+              <label for="dark-mode-switch">
+                <label for="dark-mode-switch-desktop">
+                  <span class="off-bulb" style="color: white;"><i class="far fa-lightbulb off-bulb"></i></span>
+                  <span class="on-bulb hide" style="color: orange;"><i class="fas fa-lightbulb"></i></span>
+                </label>
+              </label>
             </div>
             </span>
             <div class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu-options">
@@ -72,7 +77,10 @@ document.addEventListener('DOMContentLoaded', () => {
               </a>
               <div class="field dark-switch is-hidden-mobile is-hidden-tablet-only">
                 <input id="dark-mode-switch-desktop" type="checkbox" name="dark-mode-switch" class="switch dark-mode-switch is-rtl is-small" checked="checked">
-                <label for="dark-mode-switch-desktop"><i class="fas fa-lightbulb"></i></label>
+                <label for="dark-mode-switch-desktop">
+                  <span class="off-bulb" style="color: white;"><i class="far fa-lightbulb off-bulb"></i></span>
+                  <span class="on-bulb hide" style="color: orange;"><i class="fas fa-lightbulb"></i></span>
+                </label>
               </div>
             </div>
   
@@ -99,6 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementsByTagName("html")[0].classList.add("toggle-dark");
     const dark_toggles = document.getElementsByClassName("toggle-dark");
+    const on_bulbs = document.getElementsByClassName("on-bulb");
+    const off_bulbs = document.getElementsByClassName("off-bulb");
     for(let el of dark_toggles)
     {
       el.classList.add("has-background-dark");
@@ -117,7 +127,9 @@ document.addEventListener('DOMContentLoaded', () => {
             toggle.classList.remove("has-background-dark");
             toggle.classList.remove("has-text-white");
             toggle.classList.remove("is-dark");
-          }  
+          }
+          for(let bulb of on_bulbs) bulb.classList.remove("hide");
+          for(let bulb of off_bulbs) bulb.classList.add("hide"); 
         }
         else
         {
@@ -127,7 +139,9 @@ document.addEventListener('DOMContentLoaded', () => {
             toggle.classList.add("has-background-dark");
             toggle.classList.add("has-text-white");
             toggle.classList.add("is-dark");
-          } 
+          }
+          for(let bulb of on_bulbs) bulb.classList.add("hide");
+          for(let bulb of off_bulbs) bulb.classList.remove("hide");  
         }   
       });
     }
