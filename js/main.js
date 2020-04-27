@@ -120,7 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
       el.classList.add("is-dark");
     }
     const dark_switches = document.getElementsByClassName("dark-mode-switch");
-    console.log(dark_switches)
     for (let el of dark_switches) {
       el.addEventListener('click', (event) => {
         if(el.getAttribute("checked") === "checked")
