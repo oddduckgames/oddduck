@@ -1,15 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
     const parser = new DOMParser();
+    let path = ""
+    const iter = location.pathname.split("io")[1].split("/").length - 1
+    for(let x = 0; x < iter; x++) path += "../"
+    console.log(path)
     const main_nav = parser.parseFromString(
         `<nav class="navbar is-spaced is-dark toggle-dark" role="navigation" aria-label="main navigation">
         <div class="container">
   
           <div class="navbar-brand">
-            <a href="../oddduckgames.github.io/index.html" class="navbar-item is-family-secondary is-size-4 is-hidden-desktop">
-              <img src="../oddduckgames.github.io/img/duck.png">
+            <a href="${path}oddduckgames.github.io/index.html" class="navbar-item is-family-secondary is-size-4 is-hidden-desktop">
+              <img src="${path}oddduckgames.github.io/img/duck.png">
               <strong>oddduck games</strong></a>
-            <a href="../oddduckgames.github.io/index.html" class="navbar-item is-family-secondary is-size-2 is-hidden-mobile is-hidden-tablet-only">
-              <img src="../oddduckgames.github.io/img/duck.png">
+            <a href="${path}oddduckgames.github.io/index.html" class="navbar-item is-family-secondary is-size-2 is-hidden-mobile is-hidden-tablet-only">
+              <img src="${path}oddduckgames.github.io/img/duck.png">
               <strong>oddduck games</strong></a>
             <span class="navbar-item">
             <div class="field dark-switch is-hidden-desktop">
@@ -36,15 +40,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   games
                 </a>
                 <div class="navbar-dropdown toggle-dark">
-                  <a href="../oddduckgames.github.io/pages/the-line.html" class="navbar-item toggle-dark">The Line</a>
+                  <a href="${path}oddduckgames.github.io/pages/the-line.html" class="navbar-item toggle-dark">The Line</a>
                   <hr class="navbar-divider">
-                  <a href="../oddduckgames.github.io/pages/ina.html" class="navbar-item toggle-dark">Tales of the Basilisk: Ina</a>
+                  <a href="${path}oddduckgames.github.io/pages/ina.html" class="navbar-item toggle-dark">Tales of the Basilisk: Ina</a>
                 </div>
               </div>
-              <a href="../oddduckgames.github.io/pages/about.html" class="navbar-item toggle-dark">about</a>
-              <a href="../oddduckgames.github.io/pages/forums.html" class="navbar-item toggle-dark">forums</a>
-              <a href="../oddduckgames.github.io/pages/blog.html" class="navbar-item toggle-dark">dev-blog</a>
-              <a href="../oddduckgames.github.io/pages/contact.html" class="navbar-item toggle-dark">contact</a>
+              <a href="${path}oddduckgames.github.io/pages/about.html" class="navbar-item toggle-dark">about</a>
+              <a href="${path}oddduckgames.github.io/pages/forums.html" class="navbar-item toggle-dark">forums</a>
+              <a href="${path}oddduckgames.github.io/pages/blog.html" class="navbar-item toggle-dark">dev-blog</a>
+              <a href="${path}oddduckgames.github.io/pages/contact.html" class="navbar-item toggle-dark">contact</a>
             </div>
             <div class="navbar-end">
               <a href="https://www.youtube.com/channel/UCqzFJQ7_h8XI3jNtAsrEq9w/" class="navbar-item"><span style="color: #c4302b;"><i class="fab fa-youtube"></i></span>
