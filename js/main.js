@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const testing = true;
+    const testing = false;
 
     let levels_from_root
     if(testing) levels_from_root = location.pathname.split("io")[1].split("/").length - 1
