@@ -115,28 +115,28 @@ document.addEventListener('DOMContentLoaded', () => {
               <a href="${main_nav.start.contact}" class="navbar-item toggle-dark">contact</a>
             </div>
             <div class="navbar-end">
-              <a href="${socials.youtube}" class="navbar-item"><span style="color: #c4302b;"><i class="fab fa-youtube"></i></span>
+              <a href="${socials.main.youtube}" class="navbar-item"><span style="color: #c4302b;"><i class="fab fa-youtube"></i></span>
                 <span class="is-hidden-desktop toggle-dark">
                   <strong>The official YouTube channel</strong>
                   <br>
                   <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tutorials, gameplay and more</em>
                 </span>
               </a>
-              <a href="${socials.twitter}" class="navbar-item"><span style="color: #00acee;"><i class="fab fa-twitter"></i></span>
+              <a href="${socials.main.twitter}" class="navbar-item"><span style="color: #00acee;"><i class="fab fa-twitter"></i></span>
                 <span class="is-hidden-desktop toggle-dark">
                   <strong>The official Twitter</strong>
                   <br>
                   <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stay updated or @ us</em>
                 </span>
               </a>
-              <a href="${socials.twitch}" class="navbar-item"><span style="color: #6441a5 ;"><i class="fab fa-twitch"></i></span>
+              <a href="${socials.main.twitch}" class="navbar-item"><span style="color: #6441a5 ;"><i class="fab fa-twitch"></i></span>
                 <span class="is-hidden-desktop toggle-dark">
                   <strong>The official Twitch stream</strong>
                   <br>
                   <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Live announcments and tutorials</em>
                 </span>
               </a>
-              <a href="${socials.github}" class="navbar-item"><i class="fab fa-github"></i>
+              <a href="${socials.main.github}" class="navbar-item"><i class="fab fa-github"></i>
                 <span class="is-hidden-desktop toggle-dark">
                   <strong>The official GitHub</strong>
                   <br>
