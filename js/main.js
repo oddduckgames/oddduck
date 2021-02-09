@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let levels_from_root
     if(testing) levels_from_root = location.pathname.split("io")[1].split("/").length - 1
     else levels_from_root = location.pathname.split("/").length - 1
+    console.log(location.pathname)
 
     let path_to_root = ""
     for(let x = 0; x < levels_from_root; x++) path_to_root += "../"
@@ -43,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
           ina: `${path_to_games}ina.html`
         },
         about: {
-          culture: `${path_to_about}culture.html`,
           purpose: `${path_to_about}purpose.html`,
           team: `${path_to_about}team.html`
         },
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   games
                 </a>
                 <div class="navbar-dropdown toggle-dark">
-                  <a href="${main_nav.start.games.the_line}" class="navbar-item toggle-dark">The Line</a>
+                  <a href="${main_nav.start.games.the_line}" class="navbar-item toggle-dark">The Line of Battle</a>
                   <hr class="navbar-divider is-hidden-desktop">
                   <a href="${main_nav.start.games.ina}" class="navbar-item toggle-dark">Tales of the Basilisk: Ina</a>
                 </div>
@@ -102,8 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
                   about
                 </a>
                 <div class="navbar-dropdown toggle-dark">
-                  <a href="${main_nav.start.about.culture}" class="navbar-item toggle-dark">our culture</a>
-                  <hr class="navbar-divider is-hidden-desktop">
                   <a href="${main_nav.start.about.purpose}" class="navbar-item toggle-dark">our purpose</a>
                   <hr class="navbar-divider is-hidden-desktop">
                   <a href="${main_nav.start.about.team}" class="navbar-item toggle-dark">our team</a>
@@ -133,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="is-hidden-desktop toggle-dark">
                   <strong>The official Twitch stream</strong>
                   <br>
-                  <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Live announcments and tutorials</em>
+                  <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Live announcements and tutorials</em>
                 </span>
               </a>
               <a href="${socials.main.github}" class="navbar-item"><i class="fab fa-github"></i>
